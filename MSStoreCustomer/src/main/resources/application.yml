@@ -1,0 +1,31 @@
+server:
+  port: 8088
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-exception: false
+
+spring:
+  application:
+    name: config-customer
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Aguila123456789
+    url: jdbc:mysql://localhost:3306/libreapp
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      
+eureka:
+  instance:
+    statusPageUrlPath: ${management.endpoints.web.base-path}/info
+    healthCheckUrlPath: ${management.endpoints.web.base-path}/health
+    preferIpAddress: true
+  client:
+    serviceUrl:
+#       defaultZone: http://127.0.0.1:8099/eureka/
+       defaultZone: http://primary:8011/eureka/,http://secondary:8012/eureka/,http://tertiary:8013/eureka/
+

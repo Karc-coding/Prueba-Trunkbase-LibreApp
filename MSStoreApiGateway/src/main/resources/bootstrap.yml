@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config-apigateway
+  boot:    admin:      client:        url:        - http://localhost:8089
+        instance:          prefer-ip: true
+          
+info:
+  project:
+    name: ms-store-apigateway
+    description: Store ApiGateway
+    version: 1.0.0
+management:
+  endpoints:
+    web:
+      base-path: '/apigateway/actuator'
+      exposure:
+        include: '*'

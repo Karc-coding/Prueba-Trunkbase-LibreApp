@@ -1,0 +1,1272 @@
+{
+	"info": {
+		"_postman_id": "d8c60034-9685-4bf8-b546-88e03e90d364",
+		"name": "MS LibreApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MSCustomer",
+			"item": [
+				{
+					"name": "Customer",
+					"item": [
+						{
+							"name": "List Customer",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8088/customer/listAll",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"customer",
+										"listAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Customer",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8088/customer/958afcfe-401a-11ec-815c-0a0027000006",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"customer",
+										"958afcfe-401a-11ec-815c-0a0027000006"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Customer Feign",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8088/customer/feign/958afcfe-401a-11ec-815c-0a0027000006",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"customer",
+										"feign",
+										"958afcfe-401a-11ec-815c-0a0027000006"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Customer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dni\": \"85479562\",\r\n    \"firstName\": \"Kevin\",\r\n    \"lastName\": \"Rojas\",\r\n    \"email\": \"karc@gmail.com\",\r\n    \"departamento\": {\r\n        \"id\": 13,\r\n        \"name\": \"La Libertad\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8088/customer/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"customer",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Customer",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dni\": \"85479562\",\r\n    \"firstName\": \"Kevin\",\r\n    \"lastName\": \"Rojas\",\r\n    \"email\": \"karc@gmail.com\",\r\n    \"phone\": \"958462875\",\r\n    \"address\": \"Un lugar\",\r\n    \"dateBirth\": \"2002-01-10\",\r\n    \"departamento\": {\r\n        \"id\": 13,\r\n        \"name\": \"La Libertad\"\r\n    },\r\n    \"dateRegister\": \"2021-11-01T18:16:24.000+00:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8088/customer/update/e377b0b3-6b3a-4932-8453-be7e714b2eb8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"customer",
+										"update",
+										"e377b0b3-6b3a-4932-8453-be7e714b2eb8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Customer",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8088/customer/delete/e377b0b3-6b3a-4932-8453-be7e714b2eb8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"customer",
+										"delete",
+										"e377b0b3-6b3a-4932-8453-be7e714b2eb8"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Department",
+					"item": [
+						{
+							"name": "List Department",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8088/department/listAll",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"department",
+										"listAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Department",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8088/department/13",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8088",
+									"path": [
+										"department",
+										"13"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "MSProduct",
+			"item": [
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "List Product",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/book/listAll",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"book",
+										"listAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Product Active",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/book/listAllActive",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"book",
+										"listAllActive"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Product",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/book/5b533367-401a-11ec-815c-0a0027000006",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"book",
+										"5b533367-401a-11ec-815c-0a0027000006"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Product Feign",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/book/feign/5b533367-401a-11ec-815c-0a0027000006",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"book",
+										"feign",
+										"5b533367-401a-11ec-815c-0a0027000006"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"My World!\",\r\n    \"serie\": \"VJ89458\",\r\n    \"price\": 30.20,\r\n    \"stock\": 100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8087/book/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"book",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Product",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"My World!\",\r\n    \"serie\": \"VJ89458\",\r\n    \"yearBook\": \"2021\",\r\n    \"categoria\": {\r\n        \"id\": 13,\r\n        \"name\": \"Historical fiction\"\r\n    },\r\n    \"price\": 30.20,\r\n    \"stock\": 100,\r\n    \"autor\": {\r\n        \"id\": 31,\r\n        \"firstName\": \"Kevin\",\r\n        \"lastName\": \"Rojas\",\r\n        \"nickname\": \"Karc\"\r\n    },\r\n    \"state\": \"CREATED\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8087/book/update/66ee61d0-30dd-47bf-a21f-3abe07a95aa5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"book",
+										"update",
+										"66ee61d0-30dd-47bf-a21f-3abe07a95aa5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Product",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/book/delete/66ee61d0-30dd-47bf-a21f-3abe07a95aa5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"book",
+										"delete",
+										"66ee61d0-30dd-47bf-a21f-3abe07a95aa5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Category",
+					"item": [
+						{
+							"name": "List Category",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/category/listAll",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"category",
+										"listAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Category",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/category/18",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"category",
+										"18"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Author",
+					"item": [
+						{
+							"name": "List Author",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/author/listAll",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"author",
+										"listAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Author",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/author/16",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"author",
+										"16"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "MSSale",
+			"item": [
+				{
+					"name": "Book Sale",
+					"item": [
+						{
+							"name": "List Book Sale",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8086/sale/listAll",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8086",
+									"path": [
+										"sale",
+										"listAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Book Sale For State",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8086/sale/listAllForState/ACEPTADA",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8086",
+									"path": [
+										"sale",
+										"listAllForState",
+										"ACEPTADA"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Book Sale",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8086/sale/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8086",
+									"path": [
+										"sale",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Book Sale For Number Invoice",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8086/sale/getNumberInvoice/F-202100005",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8086",
+									"path": [
+										"sale",
+										"getNumberInvoice",
+										"F-202100005"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Book Sale",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user\": \"958afcfe-401a-11ec-815c-0a0027000006\",\r\n    \"bookSaleDetails\": [\r\n        {\r\n            \"bookId\": \"5b533367-401a-11ec-815c-0a0027000006\",\r\n            \"price\": 102,\r\n            \"amount\": 3\r\n        },\r\n        {\r\n            \"bookId\": \"51e68c26-401a-11ec-815c-0a0027000006\",\r\n            \"price\": 35.5,\r\n            \"amount\": 5\r\n        }\r\n    ],\r\n    \"state\": \"FACTURADA\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8086/sale/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8086",
+									"path": [
+										"sale",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Book Sale",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n            \"numberInvoice\": \"F-202100011\",\r\n            \"description\": \"Pago en 3 partes\",\r\n            \"dateRegister\": \"2021-11-10T02:25:07.000+00:00\",\r\n            \"user\": \"958afcfe-401a-11ec-815c-0a0027000006\",\r\n            \"bookSaleDetails\": [\r\n                {\r\n                    \"id\": 16,\r\n                    \"bookSalesId\": 11,\r\n                    \"bookId\": \"5b533367-401a-11ec-815c-0a0027000006\",\r\n                    \"price\": 102.0,\r\n                    \"amount\": 5,\r\n                    \"subtotal\": 306.0\r\n                },\r\n                {\r\n                    \"id\": 17,\r\n                    \"bookSalesId\": 11,\r\n                    \"bookId\": \"51e68c26-401a-11ec-815c-0a0027000006\",\r\n                    \"price\": 35.5,\r\n                    \"amount\": 3,\r\n                    \"subtotal\": 177.5\r\n                }\r\n            ],\r\n            \"state\": \"DESPACHADA\"\r\n        }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8086/sale/update/11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8086",
+									"path": [
+										"sale",
+										"update",
+										"11"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Book Sale",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8086/sale/delete/11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8086",
+									"path": [
+										"sale",
+										"delete",
+										"11"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Apigateway",
+			"item": [
+				{
+					"name": "Customer",
+					"item": [
+						{
+							"name": "Customer",
+							"item": [
+								{
+									"name": "List Customer",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/customer/listAll",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"customer",
+												"listAll"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Customer",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/customer/958afcfe-401a-11ec-815c-0a0027000006",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"customer",
+												"958afcfe-401a-11ec-815c-0a0027000006"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Customer Feign",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/customer/feign/958afcfe-401a-11ec-815c-0a0027000006",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"customer",
+												"feign",
+												"958afcfe-401a-11ec-815c-0a0027000006"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create Customer",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"dni\": \"85479562\",\r\n    \"firstName\": \"Kevin\",\r\n    \"lastName\": \"Rojas\",\r\n    \"email\": \"karc@gmail.com\",\r\n    \"departamento\": {\r\n        \"id\": 13,\r\n        \"name\": \"La Libertad\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8090/customer/create",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"customer",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Customer",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"dni\": \"85479562\",\r\n    \"firstName\": \"Kevin\",\r\n    \"lastName\": \"Rojas\",\r\n    \"email\": \"karc@gmail.com\",\r\n    \"phone\": \"958462875\",\r\n    \"address\": \"Un lugar\",\r\n    \"dateBirth\": \"2002-01-10\",\r\n    \"departamento\": {\r\n        \"id\": 13,\r\n        \"name\": \"La Libertad\"\r\n    },\r\n    \"dateRegister\": \"2021-11-01T18:16:24.000+00:00\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8090/customer/update/e377b0b3-6b3a-4932-8453-be7e714b2eb8",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"customer",
+												"update",
+												"e377b0b3-6b3a-4932-8453-be7e714b2eb8"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Customer",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/customer/delete/e377b0b3-6b3a-4932-8453-be7e714b2eb8",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"customer",
+												"delete",
+												"e377b0b3-6b3a-4932-8453-be7e714b2eb8"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Department",
+							"item": [
+								{
+									"name": "List Department",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/department/listAll",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"department",
+												"listAll"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Department",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/department/13",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"department",
+												"13"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Product",
+							"item": [
+								{
+									"name": "List Product",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/book/listAll",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"book",
+												"listAll"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "List Product Active",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/book/listAllActive",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"book",
+												"listAllActive"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Product",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/book/5b533367-401a-11ec-815c-0a0027000006",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"book",
+												"5b533367-401a-11ec-815c-0a0027000006"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Product Feign",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/book/feign/5b533367-401a-11ec-815c-0a0027000006",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"book",
+												"feign",
+												"5b533367-401a-11ec-815c-0a0027000006"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create Product",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"title\": \"My World!\",\r\n    \"serie\": \"VJ89458\",\r\n    \"price\": 30.20,\r\n    \"stock\": 100\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8090/book/create",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"book",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Product",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"title\": \"My World!\",\r\n    \"serie\": \"VJ89458\",\r\n    \"yearBook\": \"2021\",\r\n    \"categoria\": {\r\n        \"id\": 13,\r\n        \"name\": \"Historical fiction\"\r\n    },\r\n    \"price\": 30.20,\r\n    \"stock\": 100,\r\n    \"autor\": {\r\n        \"id\": 31,\r\n        \"firstName\": \"Kevin\",\r\n        \"lastName\": \"Rojas\",\r\n        \"nickname\": \"Karc\"\r\n    },\r\n    \"state\": \"CREATED\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8090/book/update/66ee61d0-30dd-47bf-a21f-3abe07a95aa5",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"book",
+												"update",
+												"66ee61d0-30dd-47bf-a21f-3abe07a95aa5"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Product",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/book/delete/66ee61d0-30dd-47bf-a21f-3abe07a95aa5",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"book",
+												"delete",
+												"66ee61d0-30dd-47bf-a21f-3abe07a95aa5"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Category",
+							"item": [
+								{
+									"name": "List Category",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/category/listAll",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"category",
+												"listAll"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Category",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/category/18",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"category",
+												"18"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Author",
+							"item": [
+								{
+									"name": "List Author",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/author/listAll",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"author",
+												"listAll"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Author",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/author/16",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"author",
+												"16"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Sale",
+					"item": [
+						{
+							"name": "Book Sale",
+							"item": [
+								{
+									"name": "List Book Sale",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/sale/listAll",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"sale",
+												"listAll"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "List Book Sale For State",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/sale/listAllForState/ACEPTADA",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"sale",
+												"listAllForState",
+												"ACEPTADA"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Book Sale",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/sale/5",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"sale",
+												"5"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Book Sale For Number Invoice",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/sale/getNumberInvoice/F-202100005",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"sale",
+												"getNumberInvoice",
+												"F-202100005"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create Book Sale",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"user\": \"958afcfe-401a-11ec-815c-0a0027000006\",\r\n    \"bookSaleDetails\": [\r\n        {\r\n            \"bookId\": \"5b533367-401a-11ec-815c-0a0027000006\",\r\n            \"price\": 102,\r\n            \"amount\": 3\r\n        },\r\n        {\r\n            \"bookId\": \"51e68c26-401a-11ec-815c-0a0027000006\",\r\n            \"price\": 35.5,\r\n            \"amount\": 5\r\n        }\r\n    ],\r\n    \"state\": \"FACTURADA\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8090/sale/create",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"sale",
+												"create"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Book Sale",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n            \"numberInvoice\": \"F-202100011\",\r\n            \"description\": \"Pago en 3 partes\",\r\n            \"dateRegister\": \"2021-11-10T02:25:07.000+00:00\",\r\n            \"user\": \"958afcfe-401a-11ec-815c-0a0027000006\",\r\n            \"bookSaleDetails\": [\r\n                {\r\n                    \"id\": 16,\r\n                    \"bookSalesId\": 11,\r\n                    \"bookId\": \"5b533367-401a-11ec-815c-0a0027000006\",\r\n                    \"price\": 102.0,\r\n                    \"amount\": 5,\r\n                    \"subtotal\": 306.0\r\n                },\r\n                {\r\n                    \"id\": 17,\r\n                    \"bookSalesId\": 11,\r\n                    \"bookId\": \"51e68c26-401a-11ec-815c-0a0027000006\",\r\n                    \"price\": 35.5,\r\n                    \"amount\": 3,\r\n                    \"subtotal\": 177.5\r\n                }\r\n            ],\r\n            \"state\": \"DESPACHADA\"\r\n        }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8090/sale/update/11",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"sale",
+												"update",
+												"11"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Book Sale",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8090/sale/delete/11",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8090",
+											"path": [
+												"sale",
+												"delete",
+												"11"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

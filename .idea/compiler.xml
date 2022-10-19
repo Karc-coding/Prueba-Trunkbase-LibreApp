@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MSStoreCustomer" />
+        <module name="MSStoreEurekaServer" />
+        <module name="MSStoreProduct" />
+        <module name="MSStoreAdminBoot" />
+        <module name="MSStoreApiGateway" />
+        <module name="MSStoreSale" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MSStoreAdminBoot" target="11" />
+      <module name="MSStoreApiGateway" target="11" />
+      <module name="MSStoreCustomer" target="11" />
+      <module name="MSStoreEurekaServer" target="11" />
+      <module name="MSStoreProduct" target="11" />
+      <module name="MSStoreSale" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MSStoreAdminBoot" options="-parameters" />
+      <module name="MSStoreApiGateway" options="-parameters" />
+      <module name="MSStoreCustomer" options="-parameters" />
+      <module name="MSStoreEurekaServer" options="-parameters" />
+      <module name="MSStoreProduct" options="-parameters" />
+      <module name="MSStoreSale" options="-parameters" />
+    </option>
+  </component>
+</project>

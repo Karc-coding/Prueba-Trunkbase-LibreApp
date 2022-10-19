@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MSStoreAdminBoot/MSStoreAdminBoot.iml" filepath="$PROJECT_DIR$/MSStoreAdminBoot/MSStoreAdminBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MSStoreApiGateway/MSStoreApiGateway.iml" filepath="$PROJECT_DIR$/MSStoreApiGateway/MSStoreApiGateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MSStoreCustomer/MSStoreCustomer.iml" filepath="$PROJECT_DIR$/MSStoreCustomer/MSStoreCustomer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MSStoreEurekaServer/MSStoreEurekaServer.iml" filepath="$PROJECT_DIR$/MSStoreEurekaServer/MSStoreEurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MSStoreProduct/MSStoreProduct.iml" filepath="$PROJECT_DIR$/MSStoreProduct/MSStoreProduct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MSStoreSale/MSStoreSale.iml" filepath="$PROJECT_DIR$/MSStoreSale/MSStoreSale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MicroServicios-LibreApp.iml" filepath="$PROJECT_DIR$/.idea/MicroServicios-LibreApp.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,42 @@
+server:
+  port: 8090
+  
+logging:  level:    root: INFO
+    
+spring:  cloud:    discovery:      enabled: true
+    gateway:      discovery:        locator:          enabled: true
+      routes:      - id: config-customer
+        uri: lb://config-customer        predicates:        - Path=/customer/**
+      - id: config-customer
+        uri: lb://config-customer
+        predicates:        - Path=/department/**
+        
+      - id: config-product
+        uri: lb://config-product
+        predicates:
+        - Path=/book/**
+      - id: config-product
+        uri: lb://config-product
+        predicates:
+        - Path=/category/**
+      - id: config-product
+        uri: lb://config-product
+        predicates:
+        - Path=/author/**
+        
+      - id: config-sale
+        uri: lb://config-sale
+        predicates:
+        - Path=/sale/**
+        
+eureka:
+  instance:
+    statusPageUrlPath: ${management.endpoints.web.base-path}/info
+    healthCheckUrlPath: ${management.endpoints.web.base-path}/health
+    preferIpAddress: true
+  client:
+    serviceUrl:
+#       defaultZone: http://127.0.0.1:8099/eureka/
+       defaultZone: http://primary:8011/eureka/,http://secondary:8012/eureka/,http://tertiary:8013/eureka/
+       
+       

@@ -1,0 +1,14 @@
+spring:  boot:    admin:      client:        url:        - http://localhost:8089        instance:          prefer-ip: true
+
+info:
+  project:
+    name: ms-store-sale
+    description: Store Sale
+    version: 1.0.0
+management:
+  endpoints:
+    web:
+      base-path: '/sale/actuator'
+      exposure:
+        include: '*'
+        

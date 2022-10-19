@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/MSStoreSale/pom.xml" />
+        <option value="$PROJECT_DIR$/MSStoreProduct/pom.xml" />
+        <option value="$PROJECT_DIR$/MSStoreCustomer/pom.xml" />
+        <option value="$PROJECT_DIR$/MSStoreAdminBoot/pom.xml" />
+        <option value="$PROJECT_DIR$/MSStoreApiGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/MSStoreEurekaServer/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="18" project-jdk-type="JavaSDK" />
+</project>
